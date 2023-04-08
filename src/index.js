@@ -1,32 +1,38 @@
 import React from "react";
-//React 17
-import ReactDOM from "react-dom";
 
-/* Applied in React 18
-import * as ReactDomClient from 'react-dom-client';
+/*  React 17
+ import ReactDOM from "react-dom";
 */
+
+/* Updated for React 18 */
+import ReactDOM from "react-dom/client";
 
 // importing the whole List
-import SingleBook from './components/bookList';
+import SingleBook from "./components/bookList";
 
 function BookListings() {
-  return (
-    <SingleBook />
-  );
+  return <SingleBook />;
 }
 
-ReactDOM.render(
+/* UPDATED FOR REACT 18 */
+const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+
+rootElement.render(
   <React.StrictMode>
     <BookListings />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
-/*
----WILL BE APLIED IN REACT 18---
 
-const rootElement = document.getElementById('root');
-const root = ReactDomClient.creatRoot(rootElement);
-root.render(<BookListings />);
-*/
+/* 
+// OLD SYNTAX OF REACT 17
+
+ReactDOM.render(
+   <React.StrictMode>
+     <BookListings />
+   </React.StrictMode>,
+   document.getElementById("root")
+ );
+
+ */
 
