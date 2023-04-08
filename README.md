@@ -1,3 +1,10 @@
+                    Amazon Best Selling Books in 2022
+A simple single page app showing the top ranking in Best Selling Amazon Books in 2022.
+I'm happy to share, and welcome any suggestions.
+Kind regards,
+Mansour, Nasry
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
